@@ -10,7 +10,7 @@ data1 = pd.read_csv('/Users/rebeckamoreno/Desktop/rawcsvtest.csv', index_col='ye
 #emissions by unit CSV
 data2 = pd.read_csv('/Users/rebeckamoreno/Desktop/emissionscsvtest.csv', index_col='year')   
 
-print(data1.loc[1995]['gas CO'])
+print(data2.loc[1995]['gas CO'])
 
 #create new emissions csv 
 # dflast = pd.DataFrame(datalast, columns= ["year", "gas CO", "gas NOx", "gas PM", "gas SOx", "diesel CO", "diesel NOx", "diesel PM", "diesel SOx", "electric CO", "electric NOx", "electric PM", "electric SOx", "savings CO", "savings NOx", "savings PM", "savings SOx"])
