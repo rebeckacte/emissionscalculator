@@ -1,0 +1,5 @@
+vehicle,year,fuel type,mileage ,gallons,kWh 
+ford,1999,gasoline,1000,25,500
+ford,2000,gasoline,5000,10,2500
+ford,2005,diesel,10000,17,5000
+ford,2010,diesel,2000,12,1000
