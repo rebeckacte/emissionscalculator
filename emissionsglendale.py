@@ -5,15 +5,12 @@ import pandas as pd
 import numpy as np
 
 #raw data CSV
-data1 = pd.read_csv('/Users/rebeckamoreno/Desktop/rawcsvtest.csv')
-df1 = pd.DataFrame(data1, columns= ["vehicle", "year", "fuel type", "mileage", "gallons", "kWh"])
+data1 = pd.read_csv('/Users/rebeckamoreno/Desktop/rawcsvtest.csv', index_col='year')
    
 #emissions by unit CSV
-data2 = pd.read_csv('/Users/rebeckamoreno/Desktop/emissionscsvtest.csv')   
-df2 = pd.DataFrame(data2, columns= ["vehicle", "year", "fuel type", "mileage", "gallons", "kWh", "gas CO", "gas NOx", "gas PM", "gas SOx", "diesel CO", "diesel NOx", "diesel PM", "diesel SOx", "electric CO", "electric NOx", "electric PM", "electric SOx"])
+data2 = pd.read_csv('/Users/rebeckamoreno/Desktop/emissionscsvtest.csv', index_col='year')   
 
-df2_records = df2.to_dict('records')
-print(df2_records)
+print(data1.loc[1995]['gas CO'])
 
 #create new emissions csv 
 # dflast = pd.DataFrame(datalast, columns= ["year", "gas CO", "gas NOx", "gas PM", "gas SOx", "diesel CO", "diesel NOx", "diesel PM", "diesel SOx", "electric CO", "electric NOx", "electric PM", "electric SOx", "savings CO", "savings NOx", "savings PM", "savings SOx"])
